@@ -5,5 +5,4 @@ __pycache__/
 *.pkl
 *.h5
 *.pt
-*.csv
 *.xlsx
