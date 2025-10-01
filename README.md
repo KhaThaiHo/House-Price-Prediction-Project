@@ -1,3 +1,23 @@
+## FILE STRUCTURE
+│
+├── datasets/               
+│   ├── data_scraping.csv
+│   ├── Data_Anyscale.csv
+│   ├── Raw_data.csv                 
+│   └── Dataframe.csv           
+│
+├── source/                  
+│   ├── data_collecting.py   
+│   ├── data_preprocessing_1.py
+│   ├── data_preprocessing_2.py
+│   ├── model_evaluating.py
+│   ├── main.py        
+│   └── full_notebook.ipynb  
+│
+├── requirements.txt         
+├── .gitignore               
+├── README.md                
+
 # House-Price-Prediction-Project
 ## Project Introduction
 Currently, the real estate market in Ho Chi Minh City is rapidly developing but also contains many uncertainties. The absence of a reference tool to assist buyers in choosing properties with appropriate value, or to help sellers set a reasonable price from the start, has always been a major challenge. On this basis, building a model that can automatically predict housing prices not only partially optimizes these two issues but can also support management units in formulating appropriate policies.
