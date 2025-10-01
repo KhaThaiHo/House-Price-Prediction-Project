@@ -1,22 +1,32 @@
-## FILE STRUCTURE
-│
-├── datasets/               
-│   ├── data_scraping.csv
-│   ├── Data_Anyscale.csv
-│   ├── Raw_data.csv                 
-│   └── Dataframe.csv           
-│
-├── source/                  
-│   ├── data_collecting.py   
-│   ├── data_preprocessing_1.py
-│   ├── data_preprocessing_2.py
-│   ├── model_evaluating.py
-│   ├── main.py        
-│   └── full_notebook.ipynb  
-│
-├── requirements.txt         
-├── .gitignore               
-├── README.md                
+## FILE STRUCTURE  
+
+    │
+    ├── datasets/               
+    │   ├── data_scraping.csv
+    │   ├── Data_Anyscale.csv
+    │   ├── Raw_data.csv                 
+    │   └── Dataframe.csv           
+    │
+    ├── source/                  
+    │   ├── data_collecting.py   
+    │   ├── data_preprocessing_1.py
+    │   ├── data_preprocessing_2.py
+    │   ├── model_evaluating.py
+    │   ├── main.py        
+    │   └── full_notebook.ipynb  
+    │
+    ├── requirements.txt         
+    ├── .gitignore               
+    ├── README.md                
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/KhaThaiHo/House-Price-Prediction-Project.git
+cd House-Price-Prediction-Project
+
+
 
 # House-Price-Prediction-Project
 ## Project Introduction
