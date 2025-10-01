@@ -1,4 +1,4 @@
-## FILE STRUCTURE  
+## 📂 Project Structure 
 
     │
     ├── datasets/               
@@ -22,11 +22,29 @@
 ## ⚙️ Installation
 
 ### 1. Clone the repository
-```bash
-git clone https://github.com/KhaThaiHo/House-Price-Prediction-Project.git
-cd House-Price-Prediction-Project
 
+    git clone https://github.com/KhaThaiHo/House-Price-Prediction-Project.git
+    cd House-Price-Prediction-Project
 
+### 2. Create a virtual environment
+
+    python -m venv venv 
+
+#### Activate environment
+
+    venv\Scripts\activate
+
+### 3. Install dependencies
+
+    pip install -r requirements.txt
+
+## 🚀 Usage
+### Run notebook
+    jupyter lab
+
+### Run scripts
+
+    python source/main.py
 
 # House-Price-Prediction-Project
 ## Project Introduction
@@ -142,3 +160,5 @@ Create Lists to store the information that can be collected after visually inspe
 **Difficulties:**
 - Lack of knowledge to apply more advanced models.
 - Limited understanding of techniques to improve model performance.
+
+
