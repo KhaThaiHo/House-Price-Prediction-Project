@@ -18,10 +18,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 # - MSE.
 # Comparision.
 
-def main():
-    # Open saved file
-    df = pd.read_csv("..\\datasets\\DataFrame.csv")
-    
+def modeling_and_evaluating(df):
     # Split X (Attributes) and y (Price)
     X = df.drop(['Price'],axis = 1) 
     y = df['Price']

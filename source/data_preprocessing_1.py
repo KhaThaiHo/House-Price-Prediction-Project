@@ -108,15 +108,10 @@ def extract_json(input_string):
         }
 
 
-def main():
-    # Open saved CSV file
-    df_scraping = pd.read_csv("../datasets/data_scraping.csv")
-    
+def data_preprocessing_1(df_scraping):
     # Add attribute Des (Description extracted by Anyscale) to DF and save
     df_scraping['des'] = df_scraping['Mô tả '].apply(get_clean_data)
-    # df_scraping.to_csv('Data_Anyscale.csv', index=False)
-
-    df_anyscale = pd.read_csv("../datasets/Data_Anyscale.csv")
+    df_anyscale = df_scraping
 
     # Changing attribute 'des' (Description) to strings
     df_anyscale['des'].astype(str)
@@ -192,7 +187,4 @@ def main():
     raw_data = pd.merge(df_anyscale, mota_data, left_index=True, right_index=True)
     # Save Data
     # raw_data.to_csv('raw_data.csv', index=False)
-
-
-if __name__ == "__main__":
-    main()
+    return raw_data

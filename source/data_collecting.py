@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 # In this step, we will use Requests to open the URL of the website containing the data to be collected, Beautiful Soup to parse the HTML of the webpage, store the extracted information into initialized Lists, and after completion, save it as a CSV file for later use.
 
 
-def main(): 
+def data_collecting(): 
     # Lists to save attributes
     link_list = []
     dientich_list = []
@@ -130,6 +130,4 @@ def main():
     df_scraping = pd.DataFrame(data_scraping)
     # Save as .csv file
     # df_scraping.to_csv('data_scraping.csv', index=False)
-
-if __name__ == "__main__":
-    main()
+    return df_scraping

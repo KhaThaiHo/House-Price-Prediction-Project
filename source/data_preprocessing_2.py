@@ -78,10 +78,7 @@ def impute_knn(df):
     # Return Dataframe combining processed Numberic columns and Categorical columns
     return pd.concat([num_df,non_num_df],axis=1)
 
-def main():
-    # Open saved file
-    raw_data = pd.read_csv("..\\datasets\\raw_data.csv")
-
+def data_preprocessing_2(raw_data):
     # Applying built function to dataset
     raw_data['Diện tich'] = raw_data['Diện tich'].apply(clean_area)
     raw_data['Diện tích'] = raw_data['Diện tích'].apply(clean_area)
@@ -154,6 +151,4 @@ def main():
     
     # Save Dataframe
     # df.to_csv('Dataframe.csv')
-
-if __name__ == "__main__":
-    main()
+    return df
